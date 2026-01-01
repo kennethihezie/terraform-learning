@@ -1,21 +1,21 @@
 variable "filename" {
   default = "pet.txt"
-  type = string
+  type    = string
 }
 
 variable "content" {
   default = "Cat"
-  type = string
+  type    = string
 }
 
 variable "ip" {
   default = 10
-  type = number
+  type    = number
 }
 
 variable "condition" {
   default = true
-  type = bool
+  type    = bool
 }
 
 variable "tags" {
@@ -26,14 +26,14 @@ variable "tags" {
   type = map(string)
 }
 
-variable "lists" {
-  default = ["item1", "item2", "item3"]
-  type = list(string)
+variable "filenames" {
+  default = ["item1.txt", "item2.txt", "item3.txt"]
+  type    = list(string)
 }
 
 variable "tuple_data" {
   default = [1, "two", true]
-  type = tuple([number, string, bool])
+  type    = tuple([number, string, bool])
 }
 
 variable "object_data" {
